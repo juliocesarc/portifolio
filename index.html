@@ -16,12 +16,25 @@
 
 </head>
 <body>
+    <!------------------ Scroll to top button -------------------->
+
+    <div class="scrollToTop-btn flex-center">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <!------------------ Light/Dark theme button -------------------->
+
+    <div class="theme-btn flex-center">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </div>
+
+    <!------------------ Header -------------------->
     <header>
         <div class="nav-bar">
             <a href="#" class="logo">Julio C.</a>
             <div class="navigation">
                 <div class="nav-items">
-                    <a href="#home">Home</a>
+                    <a class="active" href="#home">Home</a>
                     <a href="#about">About</a>
                     <a href="#skills">Skills</a>
                     <a href="#services">Services</a>
@@ -499,8 +512,75 @@
         <div class="container flex-center">
             <h1 class="section-title-01">Fale Comigo</h1>
             <h2 class="section-title-02">Fale Comigo</h2>
+            <div class="content">
+                <div class="contact-left">
+                    <h2>Vamos discutir seu projeto</h2>
+                    <ul class="contact-list">
+                        <li>
+                            <h3 class="item-title"><i class="fas fa-phone"></i> Phone</h3>
+                            <span>+55 (41)985016165</span>
+                        </li>
+                        <li>
+                            <h3 class="item-title"><i class="fas fa-envelope"></i> Endereço de Email</h3>
+                            <span><a href="mailto:juliocostaesilva4@gmail.com">juliocostaesilva4@gmail.com</a></span>
+                        </li>
+                        <li>
+                            <h3 class="item-title"><i class="fas fa-map-marker-alt"></i> Endereço Oficial</h3>
+                            <span>Rua Ângela Alves de Jorge Souza 50</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-right">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit<br><span>error enim officia deserunt ullam illo, quae poss</span></p>
+                    <form action="" class="contact-form">
+                        <div class="first-row">
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="second-row">
+                            <input type="email" placeholder="Email">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="third-row">
+                            <textarea name="message" id="" rows="7" placeholder="Message"></textarea>
+                        </div>
+                        <button class="btn" type="submit">Enviar Mensagem <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
+    <!------------------ Footer -------------------->
+    <footer>
+        <div class="footer-container">
+            <div class="about group">
+                <h2>Julio C.</h2>
+                <p>Desenvolvedor Front-end</p>
+                <a href="#about">Sobre mim</a>
+            </div>
+            <div class="hr"></div>
+            <div class="info group">
+                <h3>Mais</h3>
+                <ul>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="hr"></div>
+            <div class="follow group">
+                <h3>Segue</h3>
+                <ul>
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright group">
+            <p>&copy; 2022 by Julio C. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
