@@ -123,3 +123,14 @@ window.addEventListener("scroll", () => {
         }
     });
 });
+
+//Redimensionamento menu
+
+const btnMobile = document.querySelector('.nav-menu-btn');
+
+function toggleMenu() {
+    const nav = document.querySelector('.navigation');
+    nav.classList.toggle('active');
+}
+
+btnMobile.addEventListener('click', toggleMenu);
