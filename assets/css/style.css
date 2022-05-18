@@ -307,12 +307,6 @@ header {
     }
 }
 
-
-
-
-
-
-
 .flex-center {
     display: flex;
     justify-content: center;
@@ -321,7 +315,7 @@ header {
 
 .section {
     position: relative;
-    width: 1150px;
+    max-width: 1150px;
     margin-left: auto;
     margin-right: auto;
     padding: 6rem 2rem 2rem;
@@ -329,7 +323,7 @@ header {
 
 .sub-section {
     position: relative;
-    width: 1150px;
+    max-width: 1150px;
     margin-left: auto;
     margin-right: auto;
     padding: 6rem 0;
@@ -412,6 +406,14 @@ header {
 .about-info .professional-list {
     display: flex;
     column-gap: 30px;
+}
+
+.about-info .professional-list .list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    margin-bottom: 20px;
 }
 
 .about-info .professional-list .list-item h3 {
@@ -1170,14 +1172,205 @@ footer a {
         margin: 0 1rem;
         border-bottom: 2px solid var(--line-color);
     }
+
+    /*------------------- Home section -------------------*/
     
+    .home .home-container .info {
+        font-size: 0.85rem;
+    }
 
+    /*------------------- About section -------------------*/
 
+    .about .container .content {
+        display: grid;
+        width: 100%;
+        row-gap: 20px;
+    }
 
+    .about-img img {
+        min-width: 0;
+        width: 100%;
+    }
 
+    .about-info {
+        min-width: 0;
+        width: 100%;
+    }
 
+    .about-info .professional-list {
+        flex-direction: column;
+    }
 
+    .about-info .professional-list .list-item {
+        justify-content: start;
+    }
 
+    /*------------------- Get-in-touct -------------------*/
 
+    .get-in-touch .contact-card {
+        display: grid;
+        width: 100%;
+    }
+
+    .contact-card .title {
+        font-size: 0.8rem;
+        line-height: 50px;
+    }
+
+    /*------------------- Our clients -------------------*/
+
+    .client-swiper .swiper-slide {
+        flex-direction: column;
+    }
+
+    .client-details {
+        text-align: center;
+    }
+
+    /*------------------- Contact section -------------------*/
+
+    .contact .content {
+        flex-direction: column;
+        font-size: 0.9rem;
+    }
+
+    .contact .contact-left {
+        margin-bottom: 40px;
+    }
+
+    .contact-form .second-row {
+        flex-direction: column;
+    }
+
+    .contact-form .second-row input {
+        width: 100%;
+    }
+
+    /*------------------- Footer -------------------*/
+
+    footer .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-container .about, .footer-container .info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .footer-container .info ul {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer-container .info ul li {
+        margin: 5px 0;
+    }
+
+    .footer-container .hr {
+        width: 100%;
+        height: 2px;
+        background: rgba(255, 255, 255, 0.1);
+        margin: 10px 0 22px;
+    }
 }
 
+/*------------------- Media query max-width 730px -------------------*/
+
+@media screen and (max-width: 730px){
+    /*------------------- Common styles for all sections -------------------*/
+    body {
+        margin: 5rem 0 0 0;
+    }
+
+    .section-title-01 {
+        font-size: 3em;
+    }
+
+    .section-title-02 {
+        font-size: 2em;
+        transform: translateY(-65px);
+    }
+
+    /*------------------- Home section -------------------*/
+
+    .home .home-container {
+        display: grid;
+    }
+
+    .home-container .home-img {
+        position: absolute;
+    }
+
+    .home-container .home-img img {
+        width: 50%;
+        transform: translate(200px, -150px);
+    }
+
+    .home .home-container .info {
+        font-size: 0.8rem;
+        transform: translate(10px, 270px);
+        margin-bottom: 30px;
+    }
+
+    .media-icons {
+        margin-bottom: 80px;
+        transform: translate(-15px, -230px);
+        
+    }
+
+    /*------------------- Get-in-touch section -------------------*/
+    
+    .get-in-touch .contact-card {
+        display: grid;
+    } 
+
+    .contact-card .title {
+        font-size: 0.6rem;
+        line-height: 40px;
+    }
+
+    .contact-card .contact-btn .btn {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 650px){
+
+    /*------------------- Home section -------------------*/
+
+    .home-container .home-img img {
+        width: 50%;
+        transform: translate(180px, -180px);
+    }
+
+    .media-icons {
+        transform: translate(-15px, -280px);
+    }
+}
+
+@media screen and (max-width: 490px){
+
+    /*------------------- Home section -------------------*/
+
+    .home-container .home-img img {
+        width: 50%;
+        transform: translate(125px, -180px);
+    }
+}
+
+@media screen and (max-width: 410px){
+
+    /*------------------- Home section -------------------*/
+
+    .home-container .home-img img {
+        width: 50%;
+        transform: translate(110px, -200px);
+    }
+
+    .media-icons {
+        transform: translate(-15px, -370px);
+    }
+}
