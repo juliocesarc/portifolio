@@ -69,7 +69,10 @@ body {
     background: var(--body-bg-color);
     margin: 2rem 0 0 0;
     transition: .5s ease;
+    overflow-x: hidden;
 }
+
+
 
 a {
     text-decoration: none;
@@ -445,7 +448,7 @@ header {
 .skills-info {
     max-width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     gap: 20px;
     margin: 0 auto;
 }
@@ -713,7 +716,7 @@ header {
 
 .portfolio-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(285px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     max-width: 100%;
     gap: 35px;
     margin: 0 auto;
@@ -1372,5 +1375,23 @@ footer a {
 
     .media-icons {
         transform: translate(-15px, -370px);
+    }
+
+    .contact-list li span {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 410px){
+
+    /*------------------- Home section -------------------*/
+
+    .home-container .home-img img {
+        width: 55%;
+        transform: translate(90px, -240px);
+    }
+
+    .media-icons {
+        transform: translate(-15px, -460px);
     }
 }
